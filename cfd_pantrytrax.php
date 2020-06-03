@@ -15,8 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /* FoodbankST PantryTrax Start */
 //______________________________________________________________________________
-define( 'PLUGIN_DIR', dirname(__FILE__).'/' );
-include "functions.php";
+include_once plugins_url('functions.php' , __FILE__);
 
 //______________________________________________________________________________
 // All About Updates
