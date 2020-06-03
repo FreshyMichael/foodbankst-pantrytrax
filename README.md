@@ -1,2 +1,2 @@
-# Plugin-Starter
-FreshySites Plugin Starter - Fork Me
+# PantryTrax Integration for foodbankst.org
+Use shortcode [cfd_reg] to output table on any page
