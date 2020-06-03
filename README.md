@@ -1,2 +1,2 @@
-# foodbankst-pantrytrax
-Integrating PantryTrax with foodbankst.org
+# Plugin-Starter
+FreshySites Plugin Starter - Fork Me
