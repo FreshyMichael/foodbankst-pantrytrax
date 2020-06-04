@@ -33,7 +33,6 @@ function cfd_reg_function(){
 	echo '</tr>';
 	echo '</thead>';
 	echo '<tbody>';
-	//Form Query
  	$form_id = '4';
 	$search_criteria = array();
 	$sorting = array();
@@ -82,11 +81,12 @@ function cfd_reg_function(){
  								echo $entry_address;
 								echo '</td>';
 							    echo '<td class="search">';
- 								echo "<a href='https://secure.pantrytrak.com/mobile/search.php?type=name&lastname=" . "$lastname&firstname=$firstname' target='_blank' method='post'>Search</a>";
-							   //https://secure.pantrytrak.com/mobile/search.php?type=name&lastname=mollenkopf&firstname=mark&address1=3825%20Richland%20Rd%20NE&hh_age=52&
+ 								echo "<form class='form-inline' method='get' action='https://secure.pantrytrak.com/mobile/search.php?type=name' target='_blank'><input type='hidden' class='form-control' id='search_type' name='search_type' value='name'><input type='hidden' id='lastname' name='lastname' value='$lastname'/><input type='hidden' class='form-control' placeholder='First Name' id='firstname' name='firstname' value='$firstname'/><button type='submit' id='submit' name='submit' style='background:none; border:none; font-weight:600; color:#fdbf01;cursor: pointer;'>Search</button></form>" ;
 								echo '</td>';
-		echo '<td class="search">';
- 								echo "<a href='https://secure.pantrytrak.com/mobile/family_add1.php?lastname=$entry_last_name&firstname=$entry_first_name&address1=$address&zip=$entry_zipcode&' target='_blank'>Add</a>";
+		echo '<td class="Add">';
+ 								echo "<form class='form-inline' method='post' action='https://secure.pantrytrak.com/mobile/family_add1.php?' target='_blank'><input type='hidden' class='form-control' id='search_type' name='search_type' value='name'><input type='hidden' id='lastname' name='lastname' value='$lastname'/><input type='hidden' class='form-control' placeholder='First Name' id='firstname' name='firstname' value='$firstname'/><button type='submit' id='submit' name='submit' style='background:none; border:none; font-weight:600; color:#fdbf01;cursor: pointer;'>Add New</button></form>"
+
+									/* "<a href='https://secure.pantrytrak.com/mobile/family_add1.php?lastname=$entry_last_name&firstname=$entry_first_name&address1=$address&zip=$entry_zipcode&' target='_blank'>Add</a>" */;
 
 								echo '</td>';
 								echo '</tr>';
